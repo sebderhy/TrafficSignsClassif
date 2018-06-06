@@ -1,7 +1,14 @@
 # Traffic Sign Classification using fastai library
 Notebooks that learns and evaluate a deep classifier of both the [Belgium](http://btsd.ethz.ch/shareddata/) and [rMASTIF](http://www.zemris.fer.hr/~kalfa/Datasets/rMASTIF/) Traffic Sign Classification datasets using the [fastai library](http://www.fast.ai/).
 
-High-level details and explanations can be found there
+Here is a visualization of the Belgian traffic signs classes:
+
+![BTS](Images/BTSC_examples.png)
+
+And below a visualization of the rMASTIF (Croatian Traffic Signs) classes:
+![rMASTIF](Images/rMASTIF_examples.png)
+
+There is also [a SlideShare](https://www.slideshare.net/sebderhy/traffic-sign-classification-with-fastai-library-101010467) that gives high-level details and explanations. 
 
 The state-of-the-art on these 2 datasets was mentioned in 2015 by the paper ["OneCNN"](https://www.fer.unizg.hr/_download/repository/ACPR_2015_JurisicFilkovicKalafatic.pdf). I could not find more recent and better results on one of these 2 datasets, so I assume this is the state-of-the-art. Below is their results table:
 
