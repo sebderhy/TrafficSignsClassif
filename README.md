@@ -3,7 +3,9 @@ Notebooks that learns and evaluate a deep classifier of both the [Belgium](http:
 
 High-level details and explanations can be found there
 
-The state-of-the-art on these 2 datasets was mentioned in 2015 by the paper ["OneCNN"](https://www.fer.unizg.hr/_download/repository/ACPR_2015_JurisicFilkovicKalafatic.pdf). I could not find more recent and better results on one of these 2 datasets, so I assume this is the state-of-the-art. 
+The state-of-the-art on these 2 datasets was mentioned in 2015 by the paper ["OneCNN"](https://www.fer.unizg.hr/_download/repository/ACPR_2015_JurisicFilkovicKalafatic.pdf). I could not find more recent and better results on one of these 2 datasets, so I assume this is the state-of-the-art. Below is their results table:
+
+![ResultsTable](Images/ResultsTable.png)
 
 By making simple adaptations of the [Dog Vs Cat course](http://course.fast.ai/lessons/lesson1.html) and [notebook](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb), I was able to:
 - Reach 99.4% test accuracy on the BTSC dataset, which means that the error is more than 2x smaller than the best result in the table above (Zhu et al., "Traffic sign classification using two-layer image representation", which scored 98.77% accuracy).  
