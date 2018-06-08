@@ -4,7 +4,7 @@ This repo contains 2 notebooks that build and train deep classifiers on both the
 
 If you're less interested in the code, and just looking for a high-level overview of the work done, I recommend to rather look at [my SlideShare](https://www.slideshare.net/sebderhy/traffic-sign-classification-with-fastai-library-101010467).
 
-I did not train or apply this classifier on the [German traffic signs dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset), since [Pavel Surmenok](https://github.com/surmenok) already built a very accurate [fast.ai classifier](https://github.com/surmenok/GTSRB) for this dataset (more details can be found on his [Medium post](https://towardsdatascience.com/resnet-for-traffic-sign-classification-with-pytorch-5883a97bbaa3)).
+Note: I did not train or apply this classifier on the [German traffic signs dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset), since [Pavel Surmenok](https://github.com/surmenok) already built a very accurate [fast.ai classifier](https://github.com/surmenok/GTSRB) for this dataset (more details can be found on his [Medium post](https://towardsdatascience.com/resnet-for-traffic-sign-classification-with-pytorch-5883a97bbaa3)).
 
 ## Traffic Signs Classes
 Here is a visualization of the Belgian traffic signs classes:
@@ -22,7 +22,7 @@ The main changes that were made compared to fast.ai lesson 1 notebook are:
 - No horizontal flips are performed in data augmentation (don't forget we're talking about traffic signs!)
 - A very strong Dropout was used given the small size of the dataset in order to prevent from overfitting 
 - The [1-cycle policy](https://arxiv.org/abs/1803.09820) was used here with learning rates and weight decay derived from [Sylvain Gugger's notebook](https://github.com/sgugger/Deep-Learning/blob/master/Cyclical%20LR%20and%20momentums.ipynb) to train the networks as efficiently as possible. 
-- The part where we train the final layers only (without unfreezing the ResNet layers) using data augmentation was removed, because it did not seem to add value (but I missed something).
+- The part where we train the final layers only (without unfreezing the ResNet layers) using data augmentation was removed, because it did not seem to add value (but I might have missed something).
 
 ## Results
 ### Prior art
